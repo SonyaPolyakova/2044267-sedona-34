@@ -11,7 +11,7 @@
     <div class="content">
       <header class="page-header">
         <div class="header-logo">
-          <a href="#" class="header-logo">
+          <a href="index.html" class="header-logo">
             <img
               src="images/logo.svg"
               width="139"
@@ -23,7 +23,9 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="nav__link" href="main.html">Главная</a>
+              <a class="nav__link nav__link__current" href="index.html"
+                >Главная</a
+              >
             </li>
             <li class="navigation-item">
               <a class="nav__link" href="about.html">О Седоне</a>
@@ -91,7 +93,7 @@
           </section>
           <section class="main">
             <h1 class="main-title">
-              Седона - небольшой городок в Аризоне, заслуживающий большего!
+              Седона - небольшой городок в Аризоне,<br> заслуживающий большего!
             </h1>
             <p class="main-description">
               Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
@@ -99,76 +101,55 @@
           </section>
           <section class="advantages">
             <ul class="advantages-list">
-              <li class="advantages-item">
+              <li class="advantages-item-first">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <p class="advantages-description-short">-№1-</p>
                 <p class="advantages-description">
                   Cедона - не аттракцион для туристов, там течет своя жизнь
                 </p>
-                <img
-                  src="images/photo-1.jpg"
-                  width="800"
-                  height="384"
-                  class="advantages"
-                  alt="Фото города."
-                />
-                <ul class="advantages-card-list">
                   <li class="advantages-card-item-house">
-                    <h3 class="advantages-card-title">Жильё</h3>
+                    <p class="advantages-card-title house">Жильё</p>
                     <p class="advantages-card-description">
                       Рекомендуем пожить в настоящем мотеле, все как в кино!
                     </p>
                   </li>
                   <li class="advantages-card-item-food">
-                    <h3 class="advantages-card-title">Еда</h3>
+                    <p class="advantages-card-title food">Еда</p>
                     <p class="advantages-card-description">
                       Всегда заказывайте топовый фирменный бургер, вы не
                       разочаруетесь!
                     </p>
                   </li>
                   <li class="advantages-card-item-presents">
-                    <h3 class="advantages-card-title">Сувениры</h3>
+                    <p class="advantages-card-title presents">Сувениры</p>
                     <p class="advantages-card-description">
                       Не только китайского, но и настоящего метсного
                       производства!
                     </p>
                   </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="advantages-list">
-              <li class="advantages-item">
-                <img
-                  src="images/photo-2.jpg"
-                  width="800"
-                  hight="384"
-                  alt="Мост Дьявола."
-                />
+                  <li class="advantages-item-second">
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
                 <p class="advantages-description-short">-№2-</p>
-                <p class="advantages-description">Да, по нему можно пройти!</p>
-                <p class="advantages-description">
-                  Если вы осмелитесь, разумеется
-                </p>
-                <ul class="advantages-card-list">
-                  <li class="advantages-card-item-area">
-                    <h3 class="advantages-card-title">Небольшая площадь</h3>
-                    <p class="advantages-card-description-short">-№3-</p>
-                    <p class="advantages-card-description">
+                <p class="advantages-description">Да, по нему можно пройти!
+                  <br>Если вы осмелитесь, разумеется</p>
+                  <li class="advantages-card-area">
+                    <h3 class="advantages-card-title-second">Небольшая площадь</h3>
+                    <p class="advantages-card-description-short-second">-№3-</p>
+                    <p class="advantages-card-description-second">
                       Все достопримечательности находятся очень близко
                     </p>
                   </li>
-                  <li class="advantages-card-item-road">
-                    <h3 class="advantages-card-title">Красивая дорога</h3>
-                    <p class="advantages-card-description-short">-№4-</p>
-                    <p class="advantages-card-description">
+                  <li class="advantages-card-road">
+                    <h3 class="advantages-card-title-second">Красивая дорога</h3>
+                    <p class="advantages-card-description-short-second">-№4-</p>
+                    <p class="advantages-card-description-second">
                       Ехать в Седону из Лас-Вегаса совсем не скучно!
                     </p>
                   </li>
-                  <li class="advantages-card-item-tourist">
-                    <h3 class="advantages-card-title">Мало туристов</h3>
-                    <p class="advantages-card-description-short">-№5-</p>
-                    <p class="advantages-card-description">
+                  <li class="advantages-card-tourist">
+                    <h3 class="advantages-card-title-second">Мало туристов</h3>
+                    <p class="advantages-card-description-short-second">-№5-</p>
+                    <p class="advantages-card-description-second">
                       Большинство едет в Гранд Каньон и толпится там
                     </p>
                   </li>
@@ -288,6 +269,14 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+            <section class="modal-content">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            </section>
+          </button>
     </div>
   </body>
 </html>
