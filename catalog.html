@@ -85,21 +85,25 @@
             <main class="main-inner-container">
                 <div class="inner-container">
                     <header class="inner-header">
+                      <!-- <section class="inner"> -->
                         <h1 class="inner-header-title">Гостиницы Седоны</h1>
                         <ul class="header-navigation-list">
                             <li class="header-navigation-item">
                                 <a class="nav__link" href="main.html"></a>
                             </li>
                             <li class="header-navigation-item">
-                                <a class="nav__link">
+                                <a class="nav__link" href="#">
                                     <span class="breadcrumbs">Гостиницы</span>
                                 </a>
                             </li>
                         </ul>
+                        <!-- </section> -->
                     </header>
                     <div class="catalog-filter">
-                    <form>
-                        <fieldset class="catalog-filter-group-infra">
+                    <section class="main-filter">
+                    <form class="hotel-filter" action="#" method="post">
+                    <section class="options-infra">
+                    <fieldset class="catalog-filter-group-infra">
                     <legend class="catalog-filter-title">Инфраструктура</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -129,10 +133,12 @@
                             </li>
                         </ul>
                     </fieldset>
+                    </section>
                     </form>
-                    <form>
+                    <!-- <form> -->
+                    <section class="options-type">
                     <fieldset class="catalog-filter-group-type">
-                        <legend class="catalog-filter-title">Тип Жилья</legend>
+                      <legend class="catalog-filter-title">Тип Жилья</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
@@ -164,15 +170,36 @@
                             </li>
                         </ul>
                     </fieldset>
-                    </form>
-                    <p class="buttons">
+                    </section>
+                    <section class="options-price">
+                      <fieldset class="filter-column">
+                        <legend class="filter-column-title">Стоимость, ₽:</legend>
+                        <div class="price-control">
+                          <label class="min-price">
+                            от
+                            <input class="input-text" type="text" name="min-price" value="0">
+                          </label>
+                           <label class="max-price">
+                            до
+                            <input class="input-text" type="text" name="min-price" value="0">
+                          </label>
+                        </div>
+                        <div class="range-controls">
+                          <div class="scale">
+                            <div class="bar">
+                              <div class="range-toggle range-toggle-max">
+                              </div>
+                              <section class="filter-buttons">
+                                   <p class="buttons">
                     <button class="button-apply" type="button">Применить</button>
                     <button class="button" type="button">Сбросить</button>
                     </p>
+                    </section>
+                    </fieldset>
                     </div>
                     <section class="catalog">
+                      <section class="results">
                         <h2 class="catalog-search">Найдено гостиниц: 38</h2>
-                         <div class="catalog-right-column">
                             <div class="sorting-container">
                                 <div class="select">
                                     <div class="select sorting-type">
@@ -180,22 +207,31 @@
                                         <option value="cheap">Сначала дешёвые</option>
                                     </select>
                                 </div>
+                                <ul class="view-list">
+                                  <li class="view-item">
                                        <a href="#" class="card-grid-toggle card-grid-toggle-current" type="button">
                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
                                     <span class="visually-hidden">Показать карточки</span>
                                 </a>
+                                </li>
+                                <li class="view-item">
                                 <a href="#" class="card-grid-toggle card-grid-toggle-nocurrent" type="button">
                                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
                                     <span class="visually-hidden">Показать слайдшоу</span>
                                 </a>
+                                </li>
+                                <li class="view-item">
                                 <a href="#" class="card-grid-toggle card-grid-toggle-nocurrent" type="button">
 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16
 12H4v2h12v-2Z" fill="#000"/></svg>
                                     <span class="visually-hidden">Показать список</span>
                                 </a>
+                                </ul>
+                                </div>
+                                </section>
                         <ul class="catalog-list">
                             <li class="catalog-item">
                                 <a class="catalog-image-link" href="hotels.html">
